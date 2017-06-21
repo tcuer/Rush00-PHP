@@ -1,0 +1,80 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<TITLE>Apero !</TITLE>
+		<?php include("index.php");?>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div class="haut">
+			<img class="biere" src="Cheers.jpg">
+			<div class="titre"><p> Apéro chez tibo !</p></div>
+			<div class="login">
+			<div><a class="boutton" href="inscription.html">Inscription</a> <br /></div>
+			<br />
+			<div><a class="boutton" href="login.html">S'identifier</a></div>
+			</div>
+		</div>
+		<div class="menu">
+			<ul>
+  				<li><a class="active" href="#apetirif">APETIRIFS</a></li>
+  				<li><a href="#biere">BIERES</a></li>
+ 				<li><a href="#soiritueux">SPIRITUEUX</a></li>
+  				<li><a href="#vins">VINS</a></li>
+  				<img class="panier" src="https://slack-imgs.com/?c=1&url=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2014%2F06%2F19%2F00%2F59%2Fshopping-cart-371980_640.png">
+  				0 €
+				</ul>
+		</div>
+		<?php
+			include("display.php");
+			$connection = mysqli_connect('localhost', 'root', 'rootroot', 'data');
+			display_apetirif($connection);
+			echo "bonjour";
+		?>
+		<div class="millieu">
+		<?php echo "bonjour"; ?>
+<!--		<table>
+				<tr>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				</tr>
+			</table> -->
+		</div>
+	</body>
+</html>
